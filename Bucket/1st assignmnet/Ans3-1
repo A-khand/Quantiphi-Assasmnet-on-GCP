@@ -1,2 +1,3 @@
 gsutil mb gs://ambucketamey
  gsutil mb gs://amameybuck
+ gsutil cp gs://amameybuck/a.html gs://ambucketamey/b.html
