@@ -1,0 +1,2 @@
+gsutil cp Desktop\lambda.png gs://amameybuck
+gsutil cp /home/amey_khandalkar/amey.txt gs://amameybuck
