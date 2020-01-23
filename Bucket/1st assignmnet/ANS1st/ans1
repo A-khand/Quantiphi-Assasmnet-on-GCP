@@ -1,0 +1,8 @@
+#for creating vm
+gcloud compute instances create ubu-ame \
+--image-family ubuntu-1804-lts \
+--image-project ubuntu-os-cloud \
+--machine-type f1-micro \
+--boot-disk-size 10GB
+#for disk resizing
+gcloud compute disks resize ubu-ame --size 50 \--zone  us-central1-f   
