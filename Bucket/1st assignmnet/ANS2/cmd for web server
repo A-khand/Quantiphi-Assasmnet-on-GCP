@@ -1,0 +1,5 @@
+sudo yum install httpd
+sudo httpd start
+sudo chkconfig httpd on
+sudo vi /var/www/html/index.html
+sudo service httpd restart
