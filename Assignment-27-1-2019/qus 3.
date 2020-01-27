@@ -1,0 +1,10 @@
+Create a Cloud Function to convert the pub/sub message to json file and store it in GCS bucket  (2.5m)
+Eg: 
+If message published is:
+{
+"name":"test-file",
+"content":'{"source": "pub/sub", "destination": "gcs"}'
+}
+
+Then there should be a file `test-file.json` in the destination bucket with the content value.
+
