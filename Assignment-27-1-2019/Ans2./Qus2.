@@ -1,0 +1,1 @@
+Configure Apache2 HTTP server on a GCE VM instance and setup an email alert notification which triggers when the health check of the instance fails. Use console. 
