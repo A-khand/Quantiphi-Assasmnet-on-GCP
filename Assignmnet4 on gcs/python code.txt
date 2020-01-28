@@ -1,3 +1,13 @@
+Qus2. Create a folder structure in the bucket as follows (manually) : 
+ 	-folder1
+		- file1.txt
+		-folder2
+			-file2.txt
+
+Download the entire folder (folder1) on the local (cloud shell or vm) using python3 with standard library. 
+
+
+Ans.
 from google.cloud import storage
 import os
 
