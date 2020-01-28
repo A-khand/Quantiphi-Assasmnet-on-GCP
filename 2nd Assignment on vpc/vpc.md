@@ -1,0 +1,41 @@
+Q1: Create an instance A  in default VPC
+
+1. In the GCP console select  VM Instances
+2. Click 'Create Instane' button
+4. Give a Name, Select the Zone and Region for the instance
+5. Select the Series, Machine type - f1 micro
+6. Configure Boot Disk, Identity and API access
+7. Select the Firewall access you wish to allow
+8. In the Networking Tab under 'Management, security, disks, networking, sole tenancy' select 'default' Network Interface
+9. Click Create
+
+
+Q2:  Launch instance B with only private ip in default VPC in different zone.
+
+      
+1. In the GCP console select 'Compute Engine > VM Instances'
+2. Click 'Create Instane' button
+4. Give a Name, Select the Zone and Region for the instance
+5. Select the Series, Machine type - f1 micro
+6. Configure Boot Disk, Identity and API access
+7. Select the Firewall access you wish to allow
+8. Set external IP to 'None' in the Networking Interface drop down 
+9. Click Create
+
+
+Q3:configure NAT so instance can access Internet. 
+
+1. Go to Cloud NAT from the  Network Services
+2. Click on 'Get Started
+3. Give the gateway name
+4. Select VPC Network and specify the region 
+5. Create a cloud router
+6. select ‘Primary ranges for all subnets’ in NAT Mapping (for Compute Engine)
+7. Click create. This will allow all private subnets in the region to connect to the internet via the NAT Gateway
+
+
+Q4 SSH into Instance B using instance A and try to install nginx.
+
+1. SSH to your public instance
+2. In the terminal,type ssh <private-instance-name> (This will take us to the terminal in the private instance)
+3. Type sudo apt-get install nginx
